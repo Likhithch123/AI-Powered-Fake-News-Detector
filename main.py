@@ -6,8 +6,8 @@ from dotenv import load_dotenv
 
 load_dotenv(override=True)
 
-GOOGLE_API_KEY = "your_google_api_key"
-FACT_CHECK_API_KEY = "your-fact-check-api-key"
+# GOOGLE_API_KEY = "your_google_api_key"
+# FACT_CHECK_API_KEY = "your-fact-check-api-key"
 
 # Initialize LangChain Model
 llm = ChatGoogleGenerativeAI(model='gemini-2.0-flash',google_api_key=GOOGLE_API_KEY)
