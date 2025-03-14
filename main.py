@@ -3,11 +3,12 @@ from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain.schema import SystemMessage, HumanMessage
 import requests
 from dotenv import load_dotenv
+import os
 
 load_dotenv(override=True)
 
 # GOOGLE_API_KEY = "your_google_api_key"
-# FACT_CHECK_API_KEY = "your-fact-check-api-key"
+FACT_CHECK_API_KEY = os.getenv("FACT_CHECK_API_KEY")
 
 # Initialize LangChain Model
 llm = ChatGoogleGenerativeAI(model='gemini-2.0-flash')
