@@ -7,7 +7,7 @@ import os
 
 load_dotenv(override=True)
 
-# GOOGLE_API_KEY = "your_google_api_key"
+GOOGLE_API_KEY = "your_google_api_key"
 FACT_CHECK_API_KEY = os.getenv("FACT_CHECK_API_KEY")
 
 # Initialize LangChain Model
