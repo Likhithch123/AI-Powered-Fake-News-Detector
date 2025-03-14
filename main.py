@@ -15,7 +15,7 @@ llm = ChatGoogleGenerativeAI(model='gemini-2.0-flash')
 
 # Function to get fact_checking data
 def get_fact_check_results(query):
-    url = f"https://factchecktools.googleapis.com/v1alpha1/claims:search?query={query}&key="
+    url = f"https://factchecktools.googleapis.com/v1alpha1/claims:search?query={query}&key={FACT_CHECK_API_KEY}"
     response = requests.get(url)
     if response.status_code == 200:
         data = response.json()
