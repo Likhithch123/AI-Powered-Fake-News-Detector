@@ -1,0 +1,6 @@
+google-ai-generativelanguage==0.6.16
+langchain==0.3.20
+langchain-google-genai==2.1.0
+python-dotenv==1.0.1
+requests==2.32.3
+streamlit==1.43.2
